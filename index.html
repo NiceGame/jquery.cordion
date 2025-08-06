@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jquery图片折叠幻灯片</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.cordion.css" />
+    <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.cordion.js"></script>
+
+</head>
+
+<body>
+
+    <div id="lof-cordion-1" class="lof-cordion">
+        <div class="lof-cordion-wapper">
+            <ul>
+
+                <li>
+                    <div class="lof-shadow"></div>
+                    <img src="images/content_pic1.jpg" />
+                    <div class="lof-description">
+                        <h4>News Flash 1</h4>
+                        <p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles,
+                            content,</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lof-shadow"></div>
+                    <img src="images/content_pic2.jpg" />
+                    <div class="lof-description">
+                        <h4>News Flash 2</h4>
+                        <p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles,
+                            content,</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lof-shadow"></div>
+                    <img src="images/content_pic3.jpg" />
+                    <div class="lof-description">
+                        <h4>News Flash 3</h4>
+                        <p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles,
+                            content,</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lof-shadow"></div><img src="images/content_pic4.jpg" />
+                    <div class="lof-description">
+                        <h4>News Flash 4</h4>
+                        <p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles,
+                            content,</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#lof-cordion-1').cordion({
+                startItem: 3,
+                eventHandler: 'click'
+                // 其它参数可选
+            });
+        })
+    </script>
+</body>
+
+</html>
